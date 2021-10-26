@@ -2,17 +2,20 @@
   "name": "vue3-ant-admin",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
+    "staging": "vite --mode staging",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
     "ant-design-vue": "^2.2.8",
+    "sass": "^1.43.3",
     "vue": "^3.2.16"
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
     "@vitejs/plugin-vue": "^1.9.3",
+    "sass-loader": "^12.2.0",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vite-plugin-components": "^0.13.3",

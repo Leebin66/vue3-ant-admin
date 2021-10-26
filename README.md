@@ -7,3 +7,9 @@ yarn add @types/node -D
 ## 项目使用 ant-design-vue UI框架
 
 yarn add ant-design-vue@next -S
+
+## 项目使用 sass
+
+yarn add sass
+yarn add sass-loader -D
+yarn add node-sass -D
