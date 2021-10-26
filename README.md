@@ -13,3 +13,7 @@ yarn add ant-design-vue@next -S
 yarn add sass
 yarn add sass-loader -D
 yarn add node-sass -D
+
+## 项目使用 vue-router
+
+yarn add vue-router@4

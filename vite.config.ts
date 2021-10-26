@@ -16,10 +16,18 @@ export default ({ mode }) => {
       }),
     ],
     alias: { // 别名
-      "@": path.resolve(__dirname, "src"), 
-      "views": path.resolve(__dirname, "src/views")
+      "@": path.resolve(__dirname, "src"),
+      "views": path.resolve(__dirname, "src/views"),
+      "comps": path.resolve(__dirname, "src/components")
     },
     server: {
+      proxy: {
+        '/api': {
+          target: process.env.VITE_APP_API_URL,
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, '')
+        },
+      },
       host: '0.0.0.0' // 新增内容
     },
     css: {

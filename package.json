@@ -10,7 +10,8 @@
   "dependencies": {
     "ant-design-vue": "^2.2.8",
     "sass": "^1.43.3",
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
