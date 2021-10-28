@@ -11,11 +11,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-    <!-- <a-spin /> -->
-    <a-rate v-model:value="value" />
-
-  </div>
+  <router-view></router-view>
 </template>
 
 <style scoped lang="scss">

@@ -18,7 +18,8 @@ export default ({ mode }) => {
     alias: { // 别名
       "@": path.resolve(__dirname, "src"),
       "views": path.resolve(__dirname, "src/views"),
-      "comps": path.resolve(__dirname, "src/components")
+      "comps": path.resolve(__dirname, "src/components"),
+      "hooks": path.resolve(__dirname, "src/hooks"),
     },
     server: {
       proxy: {
