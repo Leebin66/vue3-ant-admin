@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 const http = axios.create({
-  baseURL: process.env.VUE_APP_URL || "api",
+  baseURL: "api",
 });
 
 // 请求拦截
