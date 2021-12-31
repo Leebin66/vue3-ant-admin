@@ -1,7 +1,7 @@
 import { onBeforeUnmount, onMounted, ref } from "vue";
 
 /**
- * 获取当前鼠标点击事件，当前屏幕的坐标
+ * description：获取点击坐标
  */
 
 export default function () {

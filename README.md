@@ -17,3 +17,9 @@ yarn add node-sass -D
 ## 项目使用 vue-router
 
 yarn add vue-router@4
+
+## 安装 vite-plugin-mock 插件（提供本地和生产模拟服务）
+
+- 安装：yarn add mockjs vite-plugin-mock --dev
+- 编写Mock用例：
+- import ViteComponents, { AntDesignVueResolver, ElementPlusResolver } from 'vite-plugin-components'

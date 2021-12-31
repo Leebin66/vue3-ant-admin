@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite' // 代码提示支持
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
-import ViteComponents, { AntDesignVueResolver } from 'vite-plugin-components'
+import ViteComponents, { AntDesignVueResolver, ElementPlusResolver } from 'vite-plugin-components'
 
 // https://vitejs.dev/config/
 export default ({ mode }) => {
@@ -10,10 +10,11 @@ export default ({ mode }) => {
   return defineConfig({
     plugins: [
       vue(),
+      // 按需引入框架组件
       ViteComponents({
-        customComponentResolvers: [AntDesignVueResolver()],
+        customComponentResolvers: [ElementPlusResolver(), AntDesignVueResolver()],
         globalComponentsDeclaration: true
-      }),
+      })
     ],
     alias: { // 别名
       "@": path.resolve(__dirname, "src"),
