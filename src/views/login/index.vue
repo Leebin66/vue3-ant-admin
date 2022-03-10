@@ -38,24 +38,6 @@
                   </template> -->
                 </el-input>
               </el-form-item>
-              <el-form-item class="form-item-m" prop="code">
-                <el-row>
-                  <el-col :span="17">
-                    <el-input
-                      v-model="loginForm.code"
-                      placeholder="验证码"
-                    >
-                      <!-- <template #suffix>
-                        <el-icon><comment /></el-icon>
-                      </template> -->
-                    </el-input>
-                  </el-col>
-                  <el-col :span="7">
-                    <div class="login-code">
-                    </div>
-                  </el-col>
-                </el-row>
-              </el-form-item>
               <el-form-item class="form-item-m">
                 <el-checkbox v-model="loginForm.rememberMe"
                   >记住密码</el-checkbox
@@ -255,7 +237,7 @@
 
 .sign-in .signInFrom .el-form {
   padding-right: 30px;
-  margin-top: 16px;
+  margin-top: 35px;
 }
 
 .sign-in .signInFrom .el-form .el-form-item,
@@ -281,7 +263,7 @@
 }
 
 .sign-in .signInFrom .el-form .form-item-m {
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
 .sign-in .signInFrom .el-form .login-code {
